@@ -9,8 +9,6 @@ const buttonClicked = function (argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-  var argComputerMove, argMoveId, argPlayerMove, playerInput;
-
   /**
    * Describe this function...
    */

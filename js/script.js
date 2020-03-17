@@ -5,7 +5,7 @@ const buttonRock = document.getElementById('button-rock'),
 /**
  * Describe this function...
  */
-function buttonClicked(argButtonName){
+const buttonClicked = function (argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
@@ -14,7 +14,7 @@ function buttonClicked(argButtonName){
   /**
    * Describe this function...
    */
-  function getMoveName(argMoveId) {
+  const getMoveName = function (argMoveId) {
     console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
     if (argMoveId == 1) {
       return 'kamień';
@@ -31,7 +31,7 @@ function buttonClicked(argButtonName){
   /**
    * Describe this function...
    */
-  function displayResult(argPlayerMove, argComputerMove) {
+  const displayResult = function (argPlayerMove, argComputerMove) {
     console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
     if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
       printMessage('Wygrywasz!');
